@@ -1,0 +1,241 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* ── Section layout helpers ─────────────────────────────── */
+.section-card {
+  margin-top: 1.5rem;
+  border-radius: 2rem;
+  background: #111111;
+  padding: 4rem 1rem;
+}
+
+.section-hero {
+  border-radius: 2rem;
+  background: #0f2d20;
+  padding: 2.5rem 1rem;
+}
+
+@media (min-width: 640px) {
+  .section-card  { padding: 5rem 2rem; }
+  .section-hero  { padding: 2.5rem 2rem; }
+}
+
+@media (min-width: 1024px) {
+  .section-card  { padding: 5rem 3rem; }
+  .section-hero  { padding: 4rem 3rem; }
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: #0f2d20;
+  color: #f5f5f5;
+  font-family: Inter, Montserrat, Arial, sans-serif;
+}
+
+img {
+  display: block;
+}
+
+p {
+  font-size: 0.8rem;
+  line-height: 1.6rem;
+}
+
+@media (min-width: 1024px) {
+  p {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+}
+
+.site-brand {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.35em;
+  color: rgba(245, 245, 245, 0.8);
+  text-decoration: underline;
+  text-underline-offset: 0.55rem;
+}
+
+.hero-logo-box {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: #f5f5f5;
+  color: #111111;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.22);
+}
+
+.hero-logo-frame {
+  width: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-logo-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
+.hero-intro {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+  color: rgba(245, 245, 245, 0.75);
+}
+
+.hero-title,
+.section-title,
+.footer-title {
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -0.04em;
+  line-height: 0.9;
+  color: #ffffff;
+}
+
+.hero-title {
+    padding-left: 5rem;
+    transform: rotate(90deg);
+    max-width: 7ch;
+    font-size: clamp(2.7rem, 12vw, 10rem);
+    line-height: 1.2;
+}
+
+.section-title {
+  font-size: clamp(2.2rem, 4.7vw, 5.8rem);
+}
+
+.section-title--small {
+  font-size: clamp(1.5rem, 2.6vw, 2.7rem);
+  line-height: 1;
+}
+
+.footer-title {
+  font-size: clamp(4rem, 4.8vw, 6rem);
+}
+
+.hero-highlight,
+.footer-highlight {
+  color: #ff3b30;
+}
+
+.hero-image,
+.content-image,
+.portrait-image,
+.portfolio-image,
+.footer-logo-image,
+.mini-portfolio-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.image-caption-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.image-caption {
+  margin: 0;
+  padding: 0.4rem 0.65rem;
+  background: rgba(0, 0, 0, 0.55);
+  color: #f5f5f5;
+  font-size: 0.72rem;
+  line-height: 1.1rem;
+  letter-spacing: 0.01em;
+  text-transform: none;
+}
+
+.image-caption--long {
+  font-size: 0.68rem;
+  line-height: 1.05rem;
+}
+
+.hero-image {
+  filter: grayscale(0.1);
+}
+
+.stats-list {
+  font-size: clamp(2.2rem, 6vw, 6rem);
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  color: #ffffff;
+}
+
+.stats-copy,
+.content-copy,
+.section-copy,
+.footer-intro,
+.footer-links {
+  color: rgba(245, 245, 245, 0.82);
+}
+
+.stats-copy {
+  max-width: 42rem;
+  margin-top: 2rem;
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+.section-copy {
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+.section-copy--large {
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+.content-copy {
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+.footer-intro {
+  max-width: 28rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.32em;
+  line-height: 1.7;
+}
+
+.footer-links {
+  margin-top: 2rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  line-height: 1.75;
+}
+
+.footer-badge {
+  width: 5rem;
+  height: 5rem;
+  flex-shrink: 0;
+  border-radius: 9999px;
+  background: #f5f5f5;
+  overflow: hidden;
+}
+
+.mini-portfolio {
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 240px;
+}
+
+.section-spacer {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
