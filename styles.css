@@ -103,11 +103,16 @@ p {
 }
 
 .hero-title {
-    padding-left: 5rem;
-    transform: rotate(90deg);
-    max-width: 7ch;
     font-size: clamp(2.7rem, 12vw, 10rem);
     line-height: 1.2;
+}
+
+@media (min-width: 1024px) {
+    .hero-title {
+        padding-left: 5rem;
+        transform: rotate(90deg);
+        max-width: 7ch;
+    }
 }
 
 .section-title {
