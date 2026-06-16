@@ -99,6 +99,7 @@ p {
   font-size: 1.5rem;
   line-height: 2.2rem;
   font-weight: 400;
+  text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.35em;
   color: rgba(245, 245, 245, 0.8);
@@ -130,11 +131,13 @@ p {
 
 
 .hero-intro {
+  font-family: 'Kumar One', system-ui;
   margin-bottom: 1rem;
   font-size: 1.5rem;
+  text-align: center;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.4em;
+  letter-spacing: 0.5em;
   color: rgba(245, 245, 245, 0.75);
 }
 
@@ -173,12 +176,13 @@ p {
 }
 
 .footer-title {
+  font-family: 'Abril Fatface', system-ui;
   font-size: clamp(4rem, 4.8vw, 6rem);
 }
 
 .hero-highlight,
 .footer-highlight {
-  color: #ff3b30;
+  color: #da1c12;
 }
 
 .hero-image,
@@ -219,7 +223,7 @@ p {
 
 .stats-list {
   font-family: 'Abril Fatface', system-ui;
-  font-size: clamp(2.2rem, 6vw, 6rem);
+  font-size: clamp(2.2rem, 2.5vw, 8rem);
   font-weight: 400;
   text-transform: uppercase;
   line-height: 1;
@@ -258,14 +262,16 @@ p {
 }
 
 .footer-intro {
+  font-family: 'Abril Fatface', system-ui;
   max-width: 28rem;
-  font-size: 1.5rem;
+  font-size:2.0rem;
   text-transform: uppercase;
-  letter-spacing: 0.32em;
+  letter-spacing: 0.10em;
   line-height: 1.7;
 }
 
 .footer-links {
+  font-family: 'Abril Fatface', system-ui;
   margin-top: 2rem;
   font-size: 0.875rem;
   font-weight: 600;
