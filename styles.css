@@ -1,3 +1,47 @@
+@font-face {
+  font-family: 'Plaster';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/Plaster-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Cantata One';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/CantataOne-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Arapey';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/Arapey-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Kumar One';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/KumarOne-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Gravitas One';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/GravitasOne-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Abril Fatface';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/AbrilFatface-Regular.ttf') format('truetype');
+}
+
+
+
 html {
   scroll-behavior: smooth;
 }
@@ -31,7 +75,7 @@ body {
   overflow-x: hidden;
   background: #0f2d20;
   color: #f5f5f5;
-  font-family: Inter, Montserrat, Arial, sans-serif;
+  font-family: 'Cantata One', sans-serif;
 }
 
 img {
@@ -51,9 +95,10 @@ p {
 }
 
 .site-brand {
+  font-family: 'Kumar One', system-ui;
   font-size: 1.5rem;
   line-height: 2.2rem;
-  font-weight: 600;
+  font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.35em;
   color: rgba(245, 245, 245, 0.8);
@@ -96,7 +141,7 @@ p {
 .hero-title,
 .section-title,
 .footer-title {
-  font-weight: 900;
+  font-family: 'Gravitas One', system-ui;
   text-transform: uppercase;
   letter-spacing: -0.04em;
   line-height: 0.9;
@@ -110,9 +155,8 @@ p {
 
 @media (min-width: 1024px) {
     .hero-title {
-        padding-left: 5rem;
-        transform: rotate(90deg);
-        max-width: 7ch;
+        writing-mode: vertical-rl;
+        white-space: nowrap;
     }
 }
 
@@ -121,8 +165,11 @@ p {
 }
 
 .section-title--small {
-  font-size: clamp(1.5rem, 2.6vw, 2.7rem);
+  font-family: 'Abril Fatface', system-ui;
+  font-size: clamp(1.5rem, 2.6vw, 3.2rem);
   line-height: 1;
+  margin-bottom: 1rem;
+  font-weight: 400;
 }
 
 .footer-title {
@@ -171,8 +218,9 @@ p {
 }
 
 .stats-list {
+  font-family: 'Abril Fatface', system-ui;
   font-size: clamp(2.2rem, 6vw, 6rem);
-  font-weight: 900;
+  font-weight: 400;
   text-transform: uppercase;
   line-height: 1;
   letter-spacing: -0.04em;
